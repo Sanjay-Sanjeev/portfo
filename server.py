@@ -20,7 +20,7 @@ def write_to_text(data):
         text = my_file.write(email + "," + subject + "," + message + "\n")
 
 def write_to_csv(data):
-    with open('./webserver/database.csv', mode='a', newline='') as my_file_csv:
+    with open('database.csv', mode='a', newline='') as my_file_csv:
         email = data['email']
         subject = data['subject']
         message = data['message']
