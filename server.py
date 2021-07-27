@@ -39,7 +39,7 @@ def submit_form():
             write_to_csv(data)
         except:
             return 'Something went wrong!'
-    return redirect('/thankyou.html')
+        return redirect('/thankyou.html')
     else:
         return 'something wrong'
 
@@ -51,3 +51,5 @@ def submit_form():
 #webserver\Scripts\activate
 #set FLASK_APP=server
 #set FLASK_ENV=development
+
+#pip freeze > requirements.txt #to get the installed packages in the venv
